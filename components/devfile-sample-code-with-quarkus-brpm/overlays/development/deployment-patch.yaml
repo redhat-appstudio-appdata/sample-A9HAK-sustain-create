@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-brpm
+  namespace: gnunn-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:563aa789497672c7717ea94871d112cce9ac8c40bfd3cf499f1727d42e4fe4d1
+        name: my-java-quarkus
+        resources: {}
+status: {}
